@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class Dashboard extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,10 +19,12 @@ class User extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('client/login');
+		$this->load->view('client/header');
+		$this->load->view('client/dashboard');
+		$this->load->view('client/footer');
 	}
 	
-	public function login()
+	/*public function login()
 	{
 		$data = array();
 
@@ -90,7 +92,7 @@ class User extends CI_Controller {
 	public function register()
 	{
 		$this->load->view('client/register');
-	}
+	}*/
 }
 
 /* End of file welcome.php */

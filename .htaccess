@@ -1,0 +1,1 @@
+RewriteCond $1 !^(index\.php|public|robots\.txt)
